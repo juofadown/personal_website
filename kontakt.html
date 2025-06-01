@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="nav.css" />
+  <link rel="stylesheet" href="css/kontakt.css" />
+  <title>Julians Webseite</title>
+</head>
+
+<body>
+  <nav>
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="hamburger">&#9776;</label>
+
+    <div class="nav" id="nav-links">
+      <a href="ueber_mich.html" class="nav-link">Über Mich</a>
+      <a href="faehigkeiten.html" class="nav-link">Fähigkeiten</a>
+      <a href="portfolio.html" class="nav-link">Portfolio</a>
+      <a href="kontakt.html" class="nav-link">Kontakt</a>
+    </div>
+
+    <div class="top-bar">
+      <a href="https://instagram.com/ju.of.a.down" id="nav-button">
+        <span id="insta-icon">
+          <img src="assets/insta32px.png" alt="" class="icon-default" />
+          <img src="assets/insta-hover32px.png" alt="" class="icon-hover" />
+        </span>
+        Follow Me!
+      </a>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+      <img src="assets/drums_julian.png" alt="Julian with Drums" id="img_drum" />
+      <div class="centered">Kontakt</div>
+    </div>
+
+    <section class="contact-section">
+      <h2>Meine Kontaktinformationen</h2>
+      <div class="contact-info">
+        <p>
+          <img src="assets/icon/icon_add.png" alt="Email Icon" class="contact-icon" />
+          <strong>E-Mail:</strong> julian.saxer@icloud.com
+        </p>
+        <p>
+          <img src="assets/icon/icon_mobilephone.png" alt="Instagram Icon" class="contact-icon" />
+          <strong>Instagram:</strong>
+          <a href="https://instagram.com/ju.of.a.down" target="_blank">@ju.of.a.down</a>
+        </p>
+      </div>
+
+      <h3>Kontaktformular</h3>
+      <form class="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">E-Mail Adresse:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Nachricht:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit" class="send-button">
+          <img src="assets/icon/icon_send.png" alt="Send" class="send-icon" />
+          Send
+        </button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>Copyrights, 2025 - by Julian Saxer, Switzerland.</p>
+      <a href="kontakt.html" class="contact-link">@Kontakt</a>
+    </div>
+  </footer>
+</body>
+
+</html>

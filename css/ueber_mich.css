@@ -1,0 +1,121 @@
+/* Layout */
+.parent {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+
+.child {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  min-width: 300px;
+}
+
+.text-child {
+  background: linear-gradient(to right, #202020, transparent);
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Gradient auf Textseite */
+.text-child::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30%;
+  height: 100%;
+  background: linear-gradient(to right, #202020, transparent);
+  z-index: 1;
+}
+
+.text-child::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  background: linear-gradient(to bottom, #202020, transparent);
+  z-index: 1;
+}
+
+#text {
+  z-index: 2;
+  text-align: center;
+  padding: 20px;
+}
+
+.ueber-mich-container {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  padding: 40px;
+  background-color: #fff;
+  color: #000;
+}
+
+.row {
+  display: flex;
+  padding: 50px;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.image-column img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+.text-column {
+  flex: 1;
+  padding: 10px;
+}
+
+@media (max-width: 650px) {
+  body {
+    font-size: 80%;
+  }
+
+  .parent {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .row {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .image-column {
+    order: 2;
+  }
+
+  .text-column {
+    order: 1;
+  }
+
+  .image-column img {
+    margin: 0 auto;
+  }
+
+  #text {
+    padding: 40px 20px;
+  }
+}
+

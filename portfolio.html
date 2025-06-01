@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="nav.css" />
+    <link rel="stylesheet" href="css/portfolio.css" />
+    <title>Julians Webseite</title>
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="hamburger">&#9776;</label>
+
+        <div class="nav" id="nav-links">
+            <a href="ueber_mich.html" class="nav-link">Über Mich</a>
+            <a href="faehigkeiten.html" class="nav-link">Fähigkeiten</a>
+            <a href="portfolio.html" class="nav-link">Portfolio</a>
+            <a href="kontakt.html" class="nav-link">Kontakt</a>
+        </div>
+        <div class="top-bar">
+            <a href="https://instagram.com/ju.of.a.down" id="nav-button">
+                <span id="insta-icon">
+                    <img src="assets/insta32px.png" alt="" class="icon-default" />
+                    <img src="assets/insta-hover32px.png" alt="" class="icon-hover" />
+                </span>
+                Follow Me!
+            </a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <img src="assets/drums_julian.png" alt="Julian with Drums" id="img_drum">
+            <div class="centered">Portfolio</div>
+        </div>
+
+        <section class="portfolio-section">
+            <!-- Project 1 -->
+            <div class="portfolio-item">
+                <div class="icon-wrapper">
+                    <img class="icon" src="assets/icon/white_musicnote.png" alt="Music Icon" />
+                </div>
+                <div class="text-content">
+                    <h3>Drum-Transkription - „Bodies“ von Drowning Pool</h3>
+                    <p>Ich habe den Song Bodies analysiert und vom Audio in Schlagzeugnotation übertragen. Dabei habe
+                        ich mein Rhythmusverständnis vertieft und meine Genauigkeit in der Umsetzung trainiert - sowohl
+                        musikalisch als auch visuell.</p>
+                </div>
+                <video class="media-preview" controls poster="assets/rhythmus_poster.png">
+                    <source src="assets/video/rythmus_im_fokus.MP4" type="video/mp4" id="video">
+                    Dein Browser unterstützt das Video-Tag nicht.
+                </video>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="portfolio-item">
+                <div class="icon-wrapper">
+                    <img class="icon" src="assets/icon/white_rocket.png" alt="Python Icon" />
+                </div>
+                <div class="text-content">
+                    <h3>Space Invaders in Python (Pygame)</h3>
+                    <p>Als Lernprojekt habe ich mit Python und dem Framework Pygame ein eigenes 2D-Spiel entwickelt. Es
+                        enthält bewegliche Gegner, ein Punktesystem, Steuerung per Tastatur und einfache Animationen.
+                        Dabei konnte ich Konzepte wie Ereignissteuerung und Objektorientierung anwenden.</p>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="portfolio-item">
+                <div class="icon-wrapper">
+                    <img class="icon" src="assets/icon/white_camera_lens.png" alt="Video Icon" />
+                </div>
+                <div class="text-content">
+                    <h3>Vorstellungsvideo - Bewerbung zur Lehrstelle</h3>
+                    <p>Für meine Lehrstellenbewerbung habe ich ein professionelles Video produziert, in dem ich mich
+                        vorstelle. Ich habe Breakdance, Schlagzeug und Skateboarding gefilmt (inkl. Drohnenaufnahmen),
+                        das Video selbst geschnitten und das Audio bearbeitet. Veröffentlicht wurde es auf Vimeo.</p>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="portfolio-item">
+                <div class="icon-wrapper">
+                    <img class="icon" src="assets/icon/white_html.png" alt="HTML Icon" />
+                </div>
+                <div class="text-content">
+                    <h3>Persönliche Website (HTML & CSS)</h3>
+                    <p>Diese Website wurde im Rahmen meiner Ausbildung erstellt. Ich habe ein responsives Design mit
+                        HTML & CSS entwickelt und dabei auf Benutzerführung, Struktur und sauberen Code geachtet.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>Copyrights, 2025 - by Julian Saxer, Switzerland.</p>
+            <a href="kontakt.html" class="contact-link">@Kontakt</a>
+        </div>
+    </footer>
+</body>
+
+</html>

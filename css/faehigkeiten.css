@@ -1,0 +1,150 @@
+.container {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+#img_drum {
+  width: 100%;
+  display: block;
+  filter: brightness(50%);
+  margin: 0;
+  padding: 0;
+}
+
+.centered {
+  font-size: 200%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f0f0f0;
+}
+
+/* Heller Block */
+.container2 {
+  background-color: #f0f0f0;
+  color: #202020;
+  padding: 40px 20px;
+  margin: 0;
+}
+
+/* Fachliche Fähigkeiten */
+.skills-section {
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 20px 0;
+}
+
+.skills-section h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #202020;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  border: 2px solid #1e3a8a;
+  border-radius: 50px;
+  background-color: #f0f0f0;
+  overflow: hidden;
+}
+
+.skill-item .icon {
+  background-color: #1e3a8a;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-item .icon img {
+  width: 20px;
+  height: 20px;
+}
+
+.skill-item span {
+  padding: 10px 15px;
+  color: #202020;
+}
+
+/* Hobbys */
+.container2-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.text-section {
+  flex: 1 1 300px;
+}
+
+.skill {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.img1 {
+  width: 32px;
+  height: 32px;
+  margin-right: 15px;
+  margin-top: 4px;
+}
+
+.skill p {
+  margin: 0;
+}
+
+/* Video */
+.video-section {
+  flex: 1 1 300px;
+}
+
+.video-section video {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Persönliche Stärken */
+.traits-container {
+  margin-top: 40px;
+}
+
+.trait {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.trait img {
+  width: 32px;
+  height: 32px;
+  margin-right: 15px;
+  margin-top: 4px;
+}
+
+.trait-text {
+  max-width: 700px;
+}
+
+.trait-title {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0 0 5px 0;
+}
+
+.trait-description {
+  margin: 0;
+  color: #333;
+  line-height: 1.5;
+}

@@ -1,0 +1,165 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #202020;
+  color: #F0F0F0;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 15px;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #202020;
+  padding: 10px 50px;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  font-size: 200%;
+  color: #F0F0F0;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav a {
+  color: #F0F0F0;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+.top-bar {
+  display: flex;
+}
+
+/* Follow Me Button */
+#nav-button {
+  display: flex;
+  background-color: #3B82F6;
+  border-radius: 50px;
+  padding: 10px 20px;
+  color: #F0F0F0;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#nav-button:hover {
+  background-color: #F0F0F0;
+  color: #202020;
+}
+
+#insta-icon {
+  width: 20px;
+  height: 20px;
+  background-color: #F0F0F0;
+  border-radius: 50%;
+  display: flex;
+  margin-right: 10px;
+}
+
+#insta-icon img {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  transition: opacity 0.3s ease;
+}
+
+.icon-default {
+  opacity: 1;
+}
+
+.icon-hover {
+  opacity: 0;
+}
+
+#nav-button:hover .icon-default {
+  opacity: 0;
+}
+
+#nav-button:hover .icon-hover {
+  opacity: 1;
+}
+/*Footer*/
+footer {
+  background-color: #202020;
+  color: #F0F0F0;
+  padding: 10px 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+.contact-link {
+  color: #F0F0F0;
+  text-decoration: none;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
+
+
+
+@media (max-width: 650px) {
+  nav {
+    flex-direction: column;
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+  }
+
+  .top-bar {
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #menu-toggle:checked ~ .nav {
+    display: flex;
+  }
+
+  .nav a {
+    padding: 15px 20px;
+    border-bottom: 1px solid #F0F0F0;
+    text-align: center;
+  }
+
+  .nav a:hover {
+    background-color: #333;
+  }
+
+  #nav-button {
+    margin: 0;
+  }
+
+#menu-toggle:checked ~ .top-bar {
+  order: 3;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+}
