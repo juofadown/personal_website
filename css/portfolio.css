@@ -46,7 +46,7 @@
   width: 60px;
   height: 60px;
   min-width: 60px;
-  background-color: #1E40AF; /* dark blue like in image */
+  background-color: #1E40AF;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -69,8 +69,8 @@
 }
 
 section {
-  background-color: white;
-  color: black;
+  background-color: #f0f0f0;
+  color: #202020;
 }
 
 @media (max-width: 650px) {
@@ -101,7 +101,7 @@ section {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 200%;
-    color: white;
+    color: #f0f0f0;
     z-index: 2;
   }
 
