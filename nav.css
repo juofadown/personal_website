@@ -4,10 +4,10 @@ body {
   background-color: #202020;
   color: #F0F0F0;
   font-family: Verdana, Helvetica, Arial, sans-serif;
-  font-size: 15px;
+  font-size: 100%;
 }
 
-/* Navigation */
+/* navigation */
 nav {
   display: flex;
   justify-content: space-between;
@@ -101,7 +101,6 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 14px;
 }
 
 .contact-link {

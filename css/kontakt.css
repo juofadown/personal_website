@@ -81,7 +81,6 @@ main {
   padding: 10px;
   border: none;
   border-radius: 5px;
-  font-size: 14px;
 }
 
 .send-button {
@@ -92,7 +91,6 @@ main {
   border: none;
   padding: 10px 20px;
   font-weight: bold;
-  font-size: 14px;
   border-radius: 30px;
   cursor: pointer;
   width: fit-content;
@@ -105,4 +103,9 @@ main {
 .send-icon {
   width: 16px;
   height: 16px;
+}
+
+
+#message {
+  height: 100%;
 }
